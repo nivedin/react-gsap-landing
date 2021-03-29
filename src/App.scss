@@ -4,6 +4,7 @@
 @import "./styles/components/banner.scss";
 @import "./styles/components/cases.scss";
 @import "./styles/components/header.scss";
+@import "./styles/components/navigation.scss";
 
 .container {
   width: 1560px;
@@ -114,5 +115,21 @@
         }
       }
     }
+  }
+}
+
+.App {
+  z-index: 2;
+  transform: translateY(0);
+  position: relative;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  background: $white;
+  .row {
+    display: flex;
+    align-items: center;
   }
 }
